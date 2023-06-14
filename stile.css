@@ -1,0 +1,145 @@
+#logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 50px;
+   
+}
+.cosesoprasopra {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    border-bottom: 3px solid black;
+  }
+  
+
+  
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+  
+.item1 { grid-area: Pres; }
+.item2 { grid-area: Rogcol; }
+.item3 { grid-area: Doncol; }
+.item4 { grid-area: Ladcors; }
+.item5 { grid-area: Foto; }
+.item6 { grid-area: 3D; }
+.item7 { grid-area: modelling; }
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:"Pres Pres Pres Pres Pres Rogcol Rogcol Doncol Doncol"
+  "Pres Pres Pres Pres Pres Rogcol Rogcol Doncol Doncol"
+  "Pres Pres Pres Pres Pres Rogcol Rogcol Doncol Doncol"
+  "Pres Pres Pres Pres Pres Ladcors Ladcors 3D 3D"
+  "Pres Pres Pres Pres Pres Ladcors Ladcors 3D 3D"
+  "Pres Pres Pres Pres Pres Ladcors Ladcors 3D 3D"
+  "Pres Pres Pres Pres Pres Foto Foto modelling modelling"
+  "Pres Pres Pres Pres Pres Foto Foto modelling modelling"
+  "Pres Pres Pres Pres Pres Foto Foto modelling modelling";
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 10.5% 10.5% 10.5% 10.5% 10.5% 10.5% 10.5% 10.5% 10.5%;
+  
+}
+
+.grid-container img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  transition: transform;
+  transition-duration: 1.2s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.grid-container img:hover {
+  transform: scale(1.02);
+}
+
+.grid-container figure {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  margin: 0px;
+}
+
+.dropbtn {
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.collezioni {
+  position: relative;
+  display: inline-block;
+}
+
+.lista-collezioni {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.lista-collezioni a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.lista-collezioni a:hover {
+  background-color: #ddd;
+}
+
+.collezioni:hover .lista-collezioni {
+  display: block;
+}
